@@ -1,0 +1,58 @@
+@use '../assets/variables' as *;
+@use '../assets/reset.scss' as *;
+
+.pp{
+    padding: 80px;
+    &__title{
+        background : white;
+        font-weight : bold;
+
+    }
+    &__box{
+        background : white;
+        margin-top:20px;
+        display : flex;
+        justify-content: space-around;
+        flex-wrap : wrap;
+        max-width : 1440px;
+    }
+}
+@media(min-width : 1450px){
+    .totalContainer{
+        width : 100vw;
+        display:flex;
+        justify-content:center;
+
+    .pp{
+    padding-top: 80px;
+
+    &__title{
+        background : white;
+        font-weight : bold;
+
+    }
+    &__box{
+        background : white;
+        margin-top:20px;
+        display : flex;
+        justify-content: space-between;
+        // flex-wrap : wrap;
+        max-width : 1500px;
+    }
+}}
+}
+
+
+@media(max-width: 760px){
+  .pp {
+    padding: 10px;
+    &__box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+      margin-top: 2px;
+      width : 100vw;
+    }
+  }
+}

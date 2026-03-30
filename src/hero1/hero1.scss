@@ -1,11 +1,12 @@
 
 @use '../assets/variables' as *;
 // background : $green;
+
 .toppProducts{
   display : grid;
   width: 100vw;
   height : 500px;
-  padding: 50px;
+  padding: 80px;
   background-color : pink;
   grid-template-columns : auto auto auto auto;
   overflow-y: hidden;

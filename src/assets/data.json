@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Blue Mountain Air 3-Wick Scented Candle",
+    "image": "./images/img1.png",
+    "price": 45,
+    "category": "new"
+  },
+  {
+    "id": 2,
+    "name": "Black Vanilla Reed Diffuser",
+    "image": "./images/Background.png",
+    "price": 26,
+    "category": "new"
+  },
+  {
+    "id": 3,
+    "name": "Dreamcatcher 1-Wick Scented Candle",
+    "image": "./images/Background(1).png",
+    "price": 32,
+    "category": "new"
+  },
+  {
+    "id": 4,
+    "name": "Lavender & Lemon 1-Wick Scented Candle",
+    "image": "./images/Background(2).png",
+    "price": 32,
+    "category": "popular"
+  },
+  {
+    "id": 5,
+    "name": "Jasmine & Sandalwood Reed Diffuser",
+    "image": "./images/ImagePlaceholder(1).png",
+    "price": 26,
+    "category": "popular"
+  },
+  {
+    "id": 6,
+    "name": "English Rose 3-Wick Scented Candle",
+    "image": "./images/Background(3).png",
+    "price": 45,
+    "category": "popular"
+  },
+  {
+    "id": 7,
+    "name": "Ocean Bed & Linen Spray",
+    "image": "./images/Background(4).png",
+    "price": 16,
+    "category": "popular"
+  },
+  {
+    "id": 8,
+    "name": "Lemongrass & Lavender Bed & Linen Spray",
+    "image": "./images/Background(5).png",
+    "price": 16,
+    "category": "popular"
+  },
+  {
+    "id": 9,
+    "name": "Cedarwood & Tangerine 3-Wick Scented Candle",
+    "image": "./images/Background(6).png",
+    "price": 45,
+    "category": "popular"
+  },
+  {
+    "id": 10,
+    "name": "Spring Bouquet Reed Diffuser",
+    "image": "./images/Background(7).png",
+    "price": 26,
+    "category": "popular"
+  },
+
+  {
+    "id": 11,
+    "name": "Green Clover 1-Wick Scented Candle",
+    "image": "./images/Background(8).png",
+    "price": 32,
+    "category": "popular"
+  }
+]

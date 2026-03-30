@@ -1,8 +1,8 @@
 import {useRef, useEffect} from 'react';
 // import {useState,useRef, useEffect} from 'react';
 import './header.scss';
-import Logo from '../images/Logo.png';
-import bg from '../images/Hero.png';
+import Logo from '/images/Logo.png';
+import bg from '/images/Hero.png';
 
 function Header() {
 

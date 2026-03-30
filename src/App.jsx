@@ -4,6 +4,11 @@
 // import bg from './images/Hero.png';
 import Header from './header/header';
 import Hero1 from './hero1/hero1';
+import Popular from './hero2/hero2';
+// import Card from './card/card';
+// import data from './assets/data.json';
+
+import './App.scss'
 
 function App() {
 
@@ -12,7 +17,22 @@ function App() {
   <>
 
   <Header />
-  <Hero1></Hero1>
+  <Hero1 />
+  {/* <Card /> */}
+    {/* {
+      data
+      .filter((n)=> n.category=="popular")
+      // .filter((n)=> n.category=="new")
+      .map((p, i) => (
+          <Card 
+          key={i}
+          id={p.id}
+          title ={p.name}
+          img={p.image} 
+          price={p.price}/>
+       ))
+    } */}
+    <Popular />
     </>
   );
 }
