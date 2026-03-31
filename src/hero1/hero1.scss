@@ -5,16 +5,16 @@
 .toppProducts{
   display : grid;
   width: 100vw;
-  height : 500px;
-  padding: 80px;
-  background-color : pink;
-  grid-template-columns : auto auto auto auto;
+  height : 550px;
+  padding: 50px;
+  background-color : white;
+  grid-template-columns : auto 50px auto auto auto 50px;
   overflow-y: hidden;
+  position: relative;
   
   &__infos{
-    grid-column-start : 1;
-    grid-column-end : 2;
-    background : blue;
+    grid-column: 1 / 2;
+    background : white;
     border : 3px solid white;
     display : flex;
     flex-direction : column;
@@ -25,11 +25,101 @@
     margin-bottom : 12px;
   }
   }
+  &__goLeft{
+    grid-column: 2 / 3;
+    &-cont{
+      // background :blue;
+      width:50px;
+      height:50px;
+      display : flex;
+      justify-content : center;
+       align-items : center;
+       border-radius : 50%;
+       border : 1px solid black;
+       position: absolute; 
+       left :26.5vw;
+       top:200px;
+        z-index: 10; 
+    }
+  }
+  &__goRight{
+    grid-column: 6 / 7;
+    &-back{
+      width:50px;
+      height:50px;
+      display : flex;
+      justify-content : center;
+       align-items : center;
+       border-radius : 50%;
+       border : 1px solid black;
+       position : relative;
+       top: 20px;
+
+    }
+  }
+
   &__scrollbar{
-    grid-column-start : 2;
-    grid-column-end : 5;
-    background: black;
-    border : 2px solid white;
+    grid-column: 3  / 6;
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    &::-webkit-scrollbar {
+       display: none;
+       } 
+    &-box{
+      display: inline-flex;  
+      gap: 10px;   
+      height: 100%; 
+      // justify-content: center;
+      align-items:center;
+    }
     
   }
+ 
 }
+ @media(max-width : 600px){
+  .toppProducts{
+  width: 100vw;
+  height : 400px;
+  padding: 10px;
+  background-color : white;
+  overflow-y: hidden;
+  display : flex;
+  flex-direction : column;
+  overflow: hidden;
+  
+  &__infos{
+    overflow: hidden;
+    width : 100%;
+    background : white;
+    border : 3px solid white;
+    
+    margin-bottom: 15px;
+    
+    h1{
+    margin-bottom : 12px;
+  }
+  }
+  &__goLeft{
+    display:none;
+  }
+  &__goRight{
+    display:none;
+  }
+
+  &__scrollbar{
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    &::-webkit-scrollbar { display: none; } 
+    &-box{
+      display: inline-flex;  
+      gap: 10px;   
+      height: 100%; 
+      justify-content: center;
+      align-items:center;
+    }
+    
+  }
+
+  }
+
+ }

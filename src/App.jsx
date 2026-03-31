@@ -5,6 +5,7 @@
 import Header from './header/header';
 import Hero1 from './hero1/hero1';
 import Popular from './hero2/hero2';
+import Section3 from './sec3/sec3';
 // import Card from './card/card';
 // import data from './assets/data.json';
 
@@ -33,6 +34,8 @@ function App() {
        ))
     } */}
     <Popular />
+    <Section3 />
+    
     </>
   );
 }

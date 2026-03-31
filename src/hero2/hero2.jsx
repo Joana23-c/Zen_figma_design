@@ -8,14 +8,14 @@ export default function Popular(){
         <>   
     <div className="totalContainer">
         <section className="pp">
-            <h1 pp__title>Popular Products</h1>
+            <h1 className="pp__title">Popular Products</h1>
             <div className="pp__box">
                  {
                    data
                    .filter((n)=> n.category=="popular")
                    .map((p, i) => (
-                    <div className="pp__box-card">
-                     <Card key={i} 
+                    <div className="pp__box-card" key={i}>
+                     <Card  
                      id={p.id}  
                      title ={p.name} 
                      img={p.image}  

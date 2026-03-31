@@ -1,7 +1,27 @@
+import { useRef } from "react";
 
 import "./hero1.scss";
+import Card from '../card/card';
+import data from '../assets/data.json';
 
 export default function Hero() {
+    const scrollContainer= useRef(null);
+   
+    const handleScrollLeft = () => {
+  scrollContainer.current?.scrollBy({
+    left: -200,
+    behavior: "smooth",
+  });
+  console.log("go left");
+};
+
+// const handleScrollRight = () => {
+//   scrollContainer.current?.scrollBy({
+//     left: 200,
+//     behavior: "smooth",
+//   });
+// };
+
 
     return(
         <>
@@ -10,9 +30,35 @@ export default function Hero() {
                 <h1> New Arrivals</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur.</p>
             </div>
-            <div className="toppProducts__scrollbar">
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima culpa esse impedit reiciendis illo quas modi non, quisquam, consectetur architecto aliquam? Laboriosam dignissimos, eligendi cum laudantium illo amet sapiente culpa.</p> 
+            <div className="toppProducts__goLeft">
+                <div className="toppProducts__goLeft-cont">
+                    <i className="fa-solid fa-arrow-left"></i>
+                </div>
             </div>
+            <div className="toppProducts__scrollbar" ref={scrollContainer}>
+                <div className="toppProducts__scrollbar-box">
+                 {
+                   data
+                   .filter((n)=> n.category=="new")
+                   .map((p, i) => (
+                    <div className="pp__box-card" key={i}>
+                     <Card  
+                     id={p.id}  
+                     title ={p.name} 
+                     img={p.image}  
+                     price={p.price}
+                     /></div>
+                    ))
+                }
+         </div>
+            </div>
+
+            <div className="toppProducts__goRight">
+                <div className="toppProducts__goRight-back" onClick={handleScrollLeft}>
+                   <i className="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
         </section>
         </>
     );

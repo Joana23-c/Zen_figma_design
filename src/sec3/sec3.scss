@@ -1,0 +1,76 @@
+@use '../assets/variables' as *;
+
+
+.container{
+    width : 100vw;
+    // height : 500px;
+    padding : 80px;
+
+    display: flex;
+    // display : grid;
+    // grid-template-columns : 1fr 1fr;
+    gap : 20px;
+
+    &__image {
+        // background:  no-repeat center center/cover;
+
+        width : 100%;
+        text-align: center;
+    }
+    &__info{
+        
+        display : flex;
+        justify-content: center;
+        align-items : center;
+        width : 100%;
+        // padding : 40px;
+        &-center{
+            max-width : 600px;
+            h1{
+             font-size : 1.8rem;
+             margin-bottom : 10px;
+             font-weight : bold;
+            }
+            p{
+                font-size : 1.3rem;
+                margin-bottom : 16px;
+            }
+            button {
+                font-size : 1.2rem;
+                border : none;
+                padding : 12px;
+                color : white;
+                background-color : $green;
+            }
+        }
+    }
+}
+
+
+@media(min-width : 1450px){
+    .container{
+        display:flex;
+        justify-content: center;
+        align-items : center;
+        gap : 5%;
+        &__image {
+        
+            display:flex;
+            justify-content : flex-end;
+        }
+         &__info{
+         display : flex;
+         justify-content: flex-start;
+         align-items : center;
+         width : 100%;
+         }
+        
+    }
+}
+@media(max-width : 760px){
+    .container{
+        display:flex;
+        flex-direction : column;
+        padding : 10px;
+    }
+}

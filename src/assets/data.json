@@ -76,5 +76,27 @@
     "image": "./images/Background(8).png",
     "price": 32,
     "category": "popular"
+  },
+  {
+    "id": 12,
+    "name": "Cedarwood & Tangerine 3-Wick Scented Candle",
+    "image": "./images/Background(6).png",
+    "price": 45,
+    "category": "new"
+  },
+  {
+    "id": 13,
+    "name": "Spring Bouquet Reed Diffuser",
+    "image": "./images/Background(7).png",
+    "price": 26,
+    "category": "new"
+  },
+
+  {
+    "id": 14,
+    "name": "Green Clover 1-Wick Scented Candle",
+    "image": "./images/Background(8).png",
+    "price": 32,
+    "category": "new"
   }
 ]
