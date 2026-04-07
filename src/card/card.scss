@@ -6,23 +6,29 @@
   //  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    overflow: hidden;
    position: relative;
+   font-family : "'Manrope', sans-serif";
   //  transition: transform 0.2s ease;
    &__content{
     max-width : 302px;
     p{
-      
-      font-size: 1.2rem;
+      font-weight: 500;          
+      font-size: 18px;
+      line-height: 1.5; 
+      letter-spacing: -0.02em;
     }
     h3 {
-      margin-top : 10px;
-      font-size: 1.4rem;
+      margin-top : 8px;
+      font-weight: 500;          
+      font-size: 23px;
+      line-height: 1.5; 
+      letter-spacing: -0.018em;
     
    }
   }
    img{
     width: 302px;
-    height : 280px;
-    margin-bottom : 15px;
+    height : 302px;
+    margin-bottom : 16px;
    }
    .heart{
     display: none;

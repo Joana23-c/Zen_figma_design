@@ -3,6 +3,7 @@ import { useRef } from "react";
 import "./hero1.scss";
 import Card from '../card/card';
 import data from '../assets/data.json';
+import left from '/arrow-left.svg';
 
 export default function Hero() {
     const scrollContainer= useRef(null);
@@ -32,7 +33,7 @@ export default function Hero() {
             </div>
             <div className="toppProducts__goLeft">
                 <div className="toppProducts__goLeft-cont">
-                    <i className="fa-solid fa-arrow-left"></i>
+                    <img src={left} />
                 </div>
             </div>
             <div className="toppProducts__scrollbar" ref={scrollContainer}>

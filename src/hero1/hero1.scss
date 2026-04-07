@@ -5,40 +5,52 @@
 .toppProducts{
   display : grid;
   width: 100vw;
-  height : 550px;
-  padding: 50px;
+  height : 575px;
+  padding: 80px;
   background-color : white;
-  grid-template-columns : auto 50px auto auto auto 50px;
+  grid-template-columns : auto 40px auto auto auto 50px;
   overflow-y: hidden;
   position: relative;
   
   &__infos{
     grid-column: 1 / 2;
+    // width : 302px;
     background : white;
     border : 3px solid white;
     display : flex;
     flex-direction : column;
     justify-content : center;
     align-items: flex-start;
-    
+    gap : 12px;
     h1{
-    margin-bottom : 12px;
-  }
+      font-weight: 500;          
+      font-size: 32px;
+      line-height: 1.5; 
+      letter-spacing: -0.021em;
+    }
+    p{
+      font-weight: 400;          
+      font-size: 18px;
+      line-height: 1.5; 
+      letter-spacing: -0.014em;
+    }
   }
   &__goLeft{
     grid-column: 2 / 3;
+    // width : 40px;
+    // margin-left : -10px;
     &-cont{
       // background :blue;
-      width:50px;
-      height:50px;
+      width:48px;
+      height:48px;
       display : flex;
       justify-content : center;
        align-items : center;
        border-radius : 50%;
-       border : 1px solid black;
+       border : 1px solid #2E2E2E;
        position: absolute; 
-       left :26.5vw;
-       top:200px;
+       left :27.65vw;
+       top:207px; //80+151-24
         z-index: 10; 
     }
   }
@@ -67,7 +79,7 @@
        } 
     &-box{
       display: inline-flex;  
-      gap: 10px;   
+      gap: 16px;   
       height: 100%; 
       // justify-content: center;
       align-items:center;
