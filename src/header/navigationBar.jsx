@@ -1,6 +1,6 @@
 // import {useRef, useEffect} from 'react';
 
-import { useRef, useEffect } from "react";
+// import { useRef, useEffect } from "react";
 import CartIcon from "../assets/simple-cart.svg?react";
 import SearchIcon from "../assets/search.svg?react";
 import "./navigationBar.scss";
@@ -9,7 +9,7 @@ import cart from "/simple-cart.svg";
 import search from "/search.svg";
 import heart from "/heart.svg";
 import user from "/user.svg";
-import home from "/home.png";
+// import home from "/home.png";
 // import bar from '/bars-solid.svg';
 import  { Context } from "../context/context";
 import { useContext } from "react";

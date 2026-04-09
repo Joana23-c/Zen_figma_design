@@ -50,7 +50,7 @@
     border: 1px solid #2e2e2e;
     position: absolute;
     //  left :410px;
-    left: 28.5vw;
+    left: 28.2vw;
     top: 207px; //80+151-24
     z-index: 10;
   }
@@ -73,10 +73,10 @@
   &__scrollbar {
     grid-column: 3 / 4;
     overflow-x: scroll;
-    // scrollbar-width: none;
-    // &::-webkit-scrollbar {
-    //   display: none;
-    // }
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     &-box {
       display: inline-flex;
       gap: 16px;
@@ -95,6 +95,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    margin-bottom: 15px;
     overflow-x:scroll;
 
     &__infos {
@@ -125,7 +126,7 @@
       &-box{
         // display:inline-flex;
         // 
-        gap: 2px;
+        gap: 10px;
         // overflow-x: scroll;
         // flex-wrap: nowrap; 
         .pp__box-card{
@@ -135,4 +136,88 @@
 
     }
   }
+}
+
+@media (min-width: 1500px) and (max-width: 1900px){
+  .toppProducts {
+    &__goLeft-cont {
+    left: 25vw;
+    top: 207px; //80+151-24
+    z-index: 10;
+  }
+  &__goRight {
+    
+    left: 96vw;
+    top: 207px;
+    z-index: 10;
+  }
+ }
+}
+
+@media (min-width: 1901px){
+  .toppProducts {
+  display: grid;
+  width: 100vw;
+  height: 75vh;
+  padding:  5vw 7vw;
+  background-color: white;
+  grid-template-columns: 1fr 40px 3fr ;
+  overflow-y: hidden;
+  position: relative;
+
+  &__infos {
+    gap: 1vw;
+    h1 {
+      font-size: 2.2vw;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.5vw;
+    }
+  }
+  &__goLeft {
+    grid-column: 2 / 3;
+    // width : 40px;
+    // margin-left : -10px;
+  }
+  &__goLeft-cont {
+    width: 3.3vw;
+    height: 3.3vw;
+    border: 0.07vw solid #2e2e2e;
+    img{
+      width: 1.67vw;
+    }
+    left: 26.5vw;
+    top: 27%; //80+151-24
+    z-index: 10;
+  }
+  &__goRight {
+    width: 3.3vw;
+    height: 3.3vw;
+    border: 0.07vw solid #2e2e2e;
+    img{
+      width: 1.67vw;
+    }
+    //  left :1336px;
+    left: 93.2vw;
+    top: 27%;
+    z-index: 10;
+  }
+
+  &__scrollbar {
+    grid-column: 3 / 4;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &-box {
+      display: inline-flex;
+      gap: 16px;
+      height: 100%;
+      // justify-content: center;
+      align-items: center;
+    }
+  }
+}
 }
