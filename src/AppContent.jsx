@@ -9,6 +9,7 @@ import Hero1 from './hero1/hero1';
 import Popular from './hero2/hero2';
 import Section3 from './sec3/sec3';
 import NavigationBar from './header/navigationBar';
+import Hidden from './header/hiddenpart';
 // import Card from './card/card';
 // import data from './assets/data.json';
 
@@ -20,21 +21,28 @@ function AppContent() {
   
 const { scroll } = useContext(Context);
 const bigCont = useRef(null);
-  useEffect(() => {
-    console.log("scroll changed:", scroll);
-    if(scroll== true){
-      bigCont.current.style.overflow = "auto";
-    }else
-      bigCont.current.style.overflow = "hidden";
+const hidden = useRef(null);
+useEffect(() => {
+  console.log("scroll changed:", scroll);
 
-  }, [scroll]);
+  if (bigCont.current && hidden.current) {
+    if (scroll) {
+      bigCont.current.style.overflowY = "auto";
+      hidden.current.style.display = "none";
+    } else {
+      bigCont.current.style.overflowY = "hidden";
+      hidden.current.style.display = "flex";
+    }
+  }
+}, [scroll]);
 
   return (
   <>
   <div className="bigCont" ref={bigCont}>
     <div className="navBar">
        <NavigationBar></NavigationBar>
-       </div>
+    </div>
+
   <Header />
   <Hero1 />
   {/* <Card /> */}
@@ -53,6 +61,10 @@ const bigCont = useRef(null);
     } */}
     <Popular />
     <Section3 />
+    <div className="hiddenNav" ref={hidden}>
+        <Hidden  />
+    </div>
+   
     </div>
     </>
   );

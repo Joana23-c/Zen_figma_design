@@ -17,42 +17,46 @@ import { useContext } from "react";
 
 function NavigationBar() {
   const { setScroll } = useContext(Context);
-  let login = false;
-  login = true;
+  // let login = false;
+  // login = true;
 
-  const hiddenNav = useRef(null);
-  const hiddenNavLoged = useRef(null);
-  const notLoged = useRef(null);
+  // const hiddenNav = useRef(null);
+  // const hiddenNavLoged = useRef(null);
+  // const notLoged = useRef(null);
+  // const global2 = useRef(null);
 
-  useEffect(() => {
-    if (hiddenNav.current) {
-      hiddenNav.current.style.display = "none";
-    }
-    if (hiddenNavLoged.current) {
-      hiddenNavLoged.current.style.display = "none";
-    }
-    if (notLoged.current) {
-      notLoged.current.style.display = "none";
-    }
-  }, []);
+  // useEffect(() => {
+  //   global2.current.style.display = "none";
+  //   if (hiddenNav.current) {
+  //     hiddenNav.current.style.display = "none";
+  //   }
+  //   if (hiddenNavLoged.current) {
+  //     hiddenNavLoged.current.style.display = "none";
+  //   }
+  //   if (notLoged.current) {
+  //     notLoged.current.style.display = "none";
+  //   }
+  // }, []);
 
   const handleOpenNav = () => {
     setScroll(false);
-    if (hiddenNav.current) {
-        hiddenNav.current.style.display = "flex";
-       if(!login)
-         notLoged.current.style.display = "block";
-        else
-         hiddenNavLoged.current.style.display = "block";   
-  };
+  //   global2.current.style.display = "flex";
+  //   if (hiddenNav.current) {
+  //       hiddenNav.current.style.display = "flex";
+  //      if(!login)
+  //        notLoged.current.style.display = "block";
+  //       else
+  //        hiddenNavLoged.current.style.display = "block";   
+  // };
 }
 
-  const XhiddenNavBtn = () => {
-    setScroll(true);
-    hiddenNav.current.style.display = "none";
-    hiddenNavLoged.current.style.display = "none";
-    notLoged.current.style.display = "none";
-  };
+  // const XhiddenNavBtn = () => {
+  //   global2.current.style.display = "none";
+  //   setScroll(true);
+  //   hiddenNav.current.style.display = "none";
+  //   hiddenNavLoged.current.style.display = "none";
+  //   notLoged.current.style.display = "none";
+  // };
 
 
   return (
@@ -108,7 +112,7 @@ function NavigationBar() {
       </div>
 
       {/* <section className="hiddenNav" ref={hiddenNav}> */}
-      <div className="global2">
+      {/* <div className="global2" ref={global2}>
         <section className="hiddenNav" ref={hiddenNav}>
           <div className="hiddenNav__list">
             <ul>
@@ -117,7 +121,6 @@ function NavigationBar() {
                   <i className="fa-solid fa-x" width={22} height={22}></i>
                 </button>
               </li>
-              {/* <li><button id="xbtn" className="xbtn" > <i className="fa-solid fa-x"></i></button></li> */}
               <li>
                 <div className="home">
                   <div className="hImg">
@@ -215,7 +218,7 @@ function NavigationBar() {
           </div>
         </section>
 
-      </div>
+      </div> */}
     </>
   );
 }
