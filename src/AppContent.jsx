@@ -10,6 +10,7 @@ import Popular from './hero2/hero2';
 import Section3 from './sec3/sec3';
 import NavigationBar from './header/navigationBar';
 import Hidden from './header/hiddenpart';
+import Season from './hero1/heroSeason';
 // import Card from './card/card';
 // import data from './assets/data.json';
 
@@ -61,6 +62,9 @@ useEffect(() => {
     } */}
     <Popular />
     <Section3 />
+    
+    <Season />
+
     <div className="hiddenNav" ref={hidden}>
         <Hidden  />
     </div>

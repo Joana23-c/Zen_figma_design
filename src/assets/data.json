@@ -98,5 +98,48 @@
     "image": "./images/Background(8).png",
     "price": 32,
     "category": "new"
+  },
+  {
+    "id": 15,
+    "name": "Whimsical Christmas 1-Wick Scented Candle",
+    "image": "./images/Background(9).png",
+    "price": 32,
+    "category": "season"
+  },
+  {
+    "id": 16,
+    "name": "Oh Christmas Tree Small Scented Candle",
+    "image": "./images/Background(10).png",
+    "price": 24,
+    "category": "season"
+  },
+  {
+    "id": 17,
+    "name": "Frasier Fir Small Scented Candle",
+    "image": "./images/Background(11).png",
+    "price": 15,
+    "category": "season"
+  },
+  {
+    "id": 9,
+    "name": "Cedarwood & Tangerine 3-Wick Scented Candle",
+    "image": "./images/Background(6).png",
+    "price": 45,
+    "category": "season"
+  },
+  {
+    "id": 10,
+    "name": "Spring Bouquet Reed Diffuser",
+    "image": "./images/Background(7).png",
+    "price": 26,
+    "category": "season"
+  },
+
+  {
+    "id": 11,
+    "name": "Green Clover 1-Wick Scented Candle",
+    "image": "./images/Background(8).png",
+    "price": 32,
+    "category": "season"
   }
 ]

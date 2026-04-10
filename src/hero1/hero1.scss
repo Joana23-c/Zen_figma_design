@@ -7,7 +7,7 @@
   height: 575px;
   padding: 80px;
   background-color: white;
-  grid-template-columns: 1fr 40px 3fr ;
+  grid-template-columns: 1fr 40px 3fr;
   overflow-y: hidden;
   position: relative;
 
@@ -86,17 +86,17 @@
     }
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .toppProducts {
     width: 100vw;
-    height: 400px;
+    height: 450px;
     padding: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
     margin-top: 15px;
     margin-bottom: 15px;
-    overflow-x:scroll;
+    overflow-x: scroll;
 
     &__infos {
       width: 100%;
@@ -104,7 +104,6 @@
       border: 3px solid white;
       margin-bottom: 15px;
       h1 {
-        // margin-bottom : 12px;
         font-size: 24px;
       }
       p {
@@ -117,94 +116,66 @@
       display: none;
     }
 
-    &__scrollbar{
-      // display:grid;
-      // grid-template-columns : auto auto;
+    &__scrollbar {
       overflow-x: scroll;
       // scrollbar-width: none;
       // &::-webkit-scrollbar { display: none; }
-      &-box{
-        // display:inline-flex;
-        // 
+      &-box {
         gap: 10px;
-        // overflow-x: scroll;
-        // flex-wrap: nowrap; 
-        .pp__box-card{
-          // overflow-x : scroll;
-        }
+        
       }
-
     }
   }
 }
 
-@media (min-width: 1500px) and (max-width: 1900px){
+@media (min-width: 1500px) and (max-width: 1920px) {
   .toppProducts {
-    &__goLeft-cont {
-    left: 25vw;
-    top: 207px; //80+151-24
-    z-index: 10;
-  }
-  &__goRight {
-    
-    left: 96vw;
-    top: 207px;
-    z-index: 10;
-  }
- }
-}
 
-@media (min-width: 1901px){
-  .toppProducts {
-  display: grid;
-  width: 100vw;
-  height: 75vh;
-  padding:  5vw 7vw;
-  background-color: white;
-  grid-template-columns: 1fr 40px 3fr ;
-  overflow-y: hidden;
-  position: relative;
-
-  &__infos {
-    gap: 1vw;
+      &__infos {
     h1 {
-      font-size: 2.2vw;
+      font-size: 1.8vw;
     }
     p {
-      font-weight: 400;
-      font-size: 1.5vw;
+      font-size: 1.2vw;
     }
   }
-  &__goLeft {
-    grid-column: 2 / 3;
-    // width : 40px;
-    // margin-left : -10px;
+
+    &__goLeft-cont {
+      left: 25vw;
+      top: 207px; //80+151-24
+      z-index: 10;
+    }
+    &__goRight {
+      left: 96vw;
+      top: 207px;
+      z-index: 10;
+    }
   }
+}
+
+@media (min-width: 1921px) {
+ 
+.toppProducts {
+  // display: grid;
+  max-width: 100vw;
+  height: 575px;
+  // padding: 0 12vw;
+  display:flex;
+  justify-content : center;
+   &__infos {
+    max-width : 415px;
+    position:relative;
+  }
+
   &__goLeft-cont {
-    width: 3.3vw;
-    height: 3.3vw;
-    border: 0.07vw solid #2e2e2e;
-    img{
-      width: 1.67vw;
-    }
-    left: 26.5vw;
-    top: 27%; //80+151-24
-    z-index: 10;
+    display:none;
   }
   &__goRight {
-    width: 3.3vw;
-    height: 3.3vw;
-    border: 0.07vw solid #2e2e2e;
-    img{
-      width: 1.67vw;
-    }
-    //  left :1336px;
-    left: 93.2vw;
-    top: 27%;
-    z-index: 10;
+    display:none;
   }
 
   &__scrollbar {
+    max-width :920px;
     grid-column: 3 / 4;
     overflow-x: scroll;
     scrollbar-width: none;

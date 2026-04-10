@@ -37,13 +37,10 @@
   }
 
 
-  @media(max-width : 600px){
+  @media(max-width : 760px){
     .card{
-      max-width: 45vw;
-     height : 260px;
-      width: 200px;
-      min-width : 150px;
-      // flex-shrink : 0;
+      height : 274px;
+      width: 180px;
      &__content{
     p{
      font-size: 16px;
@@ -54,18 +51,17 @@
     }
    }
    img{
-    width: 45vw;
-    height : 170px;
+    width: 180px;
+    height : 180px;
     margin-bottom : 5px;
    }
    .heart{
     position : absolute;
-    left : 20px;
-    top : -8px;
-    width : 93%;
+    top : 8px;
+    left : -8px;
     display: flex;
     justify-content : flex-end;
-    padding : 15px;
+    width : 100%;
    
     .heartback{
       display:flex;
@@ -73,7 +69,6 @@
       width : 24px;
       height : 24px;
       border-radius: 20px; 
-      // 
       justify-content : center;
       align-items:center;
       
@@ -84,42 +79,42 @@
     }
   }
 
-  @media (min-width : 1901px){
-     .card {
-   background: #ffffff;
-   width: 20.97vw;
-   height : 51.2vh;
-   border-radius: 8px;
-  //  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   overflow: hidden;
-   position: relative;
-   font-family : "'Manrope', sans-serif";
-  //  transition: transform 0.2s ease;
-   &__content{
-    max-width : 20.97vw;
-    p{
-      font-weight: 500;          
-      font-size: 1.4vw;
-      line-height: 1.5; 
-      letter-spacing: -0.02em;
-    }
-    h3 {
-      margin-top : 8px;
-      font-weight: 500;          
-      font-size: 1.5vw;
-      line-height: 1.5; 
-      letter-spacing: -0.018em;
+  // @media (min-width : 1901px){
+  //    .card {
+  //  background: #ffffff;
+  //  width: 20.97vw;
+  //  height : 51.2vh;
+  //  border-radius: 8px;
+  // //  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  //  overflow: hidden;
+  //  position: relative;
+  //  font-family : "'Manrope', sans-serif";
+  // //  transition: transform 0.2s ease;
+  //  &__content{
+  //   max-width : 20.97vw;
+  //   p{
+  //     font-weight: 500;          
+  //     font-size: 1.2vw;
+  //     line-height: 1.5; 
+  //     letter-spacing: -0.02em;
+  //   }
+  //   h3 {
+  //     margin-top : 8px;
+  //     font-weight: 500;          
+  //     font-size: 1.2vw;
+  //     line-height: 1.5; 
+  //     letter-spacing: -0.018em;
     
-   }
-  }
-   img{
-    width: 21vw;
-    height : 21vw;
-    margin-bottom : 16px;
-   }
-   .heart{
-    display: none;
-   }
+  //  }
+  // }
+  //  img{
+  //   width: 21vw;
+  //   height : 21vw;
+  //   margin-bottom : 16px;
+  //  }
+  //  .heart{
+  //   display: none;
+  //  }
 
-  }
-  }
+  // }
+  // }

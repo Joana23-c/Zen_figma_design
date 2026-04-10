@@ -6,8 +6,9 @@ import "./hero2.scss";
 export default function Popular(){
     return (
         <>   
-    <div className="totalContainer">
+    {/* <div className="totalContainer"> */}
         <section className="pp">
+        
             <h1 className="pp__title">Popular Products</h1>
             <div className="pp__box">
                  {
@@ -25,7 +26,7 @@ export default function Popular(){
                 }
          </div>
         </section>
-        </div>
+        {/* </div> */}
         </>
         
     );
