@@ -122,7 +122,6 @@
       // &::-webkit-scrollbar { display: none; }
       &-box {
         gap: 10px;
-        
       }
     }
   }
@@ -130,15 +129,14 @@
 
 @media (min-width: 1500px) and (max-width: 1920px) {
   .toppProducts {
-
-      &__infos {
-    h1 {
-      font-size: 1.8vw;
+    &__infos {
+      h1 {
+        font-size: 1.8vw;
+      }
+      p {
+        font-size: 1.2vw;
+      }
     }
-    p {
-      font-size: 1.2vw;
-    }
-  }
 
     &__goLeft-cont {
       left: 25vw;
@@ -154,41 +152,45 @@
 }
 
 @media (min-width: 1921px) {
- 
-.toppProducts {
-  // display: grid;
-  max-width: 100vw;
-  height: 575px;
-  // padding: 0 12vw;
-  display:flex;
-  justify-content : center;
-   &__infos {
-    max-width : 415px;
-    position:relative;
-  }
+  .toppProducts {
+    display: grid;
+    width: 100vw;
+    height: 35vw;
+    padding : 0 6vw;
+    // padding: 9vh 5.56vw;
 
-  &__goLeft-cont {
-    display:none;
-  }
-  &__goRight {
-    display:none;
-  }
+    &__infos {
+      gap: 0.83vw;
+      h1 {
+        font-size: 2.2vw;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.25vw;
+      }
+    }
+    &__goLeft-cont {
+     display:none;
+    }
+    &__goRight {
+      display : none;
+    }
 
-  &__scrollbar {
-    max-width :920px;
-    grid-column: 3 / 4;
-    overflow-x: scroll;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    &-box {
-      display: inline-flex;
-      gap: 16px;
-      height: 100%;
-      // justify-content: center;
-      align-items: center;
+    &__scrollbar {
+      grid-column: 3 / 4;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      // display: inline-flex;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &-box {
+        display: inline-flex;
+        gap: 1.1vw;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
-}
 }
