@@ -2,7 +2,6 @@ import "./block.scss";
 import star from "/star-filled.png";
 import emptystar from "/star-empty.png";
 import vector from "/Vector.png";
-// import backgound from "/images/Background(2).png";
 
 export default function Block(props) {
   const stars = Array.from({ length: 5 }, (_, i) =>
@@ -13,7 +12,7 @@ export default function Block(props) {
     <>
       <div className="block1">
         <div className="block1__info">
-        {props.img && <img src={props.img}/>}
+          {props.img && <img src={props.img} />}
           <p>{props.info}</p>
         </div>
         <div className="block1__auth">
@@ -24,11 +23,6 @@ export default function Block(props) {
             <p>{props.auth}</p>
           </div>
           <div className="block1__auth-stars">
-            {/* <img src={star}></img>
-            <img src={star}></img>
-            <img src={star}></img>
-            <img src={star}></img>
-            <img src={star}></img> */}
             {stars.map((img, i) => (
               <img key={i} src={img} alt="star" />
             ))}

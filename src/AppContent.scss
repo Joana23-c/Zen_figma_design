@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Manrope", sans-serif;  
+  font-family: "Manrope", sans-serif;
 }
 .bigCont {
   width: 100vw;
   height: 100vh;
   position: relative;
-
+  overflow-x: hidden;
   // overflow:hidden;
-  overflow: auto;
+  overflow-y: auto;
   .navBar {
     position: sticky;
     top: 0;
@@ -36,7 +36,6 @@ body {
       top: 0;
       z-index: 1000;
       width: 100vw;
-      // height : 100vh;
     }
     .hiddenNav {
       display: flex;
@@ -45,9 +44,6 @@ body {
       top: 0;
       left: 0;
     }
-    // Header {
-    // margin-top: calc((-100vh - 65px));
-    // }
   }
 }
 

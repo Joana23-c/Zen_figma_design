@@ -36,11 +36,8 @@
   }
   &__goLeft {
     grid-column: 2 / 3;
-    // width : 40px;
-    // margin-left : -10px;
   }
   &__goLeft-cont {
-    // background :blue;
     width: 48px;
     height: 48px;
     display: flex;
@@ -49,7 +46,6 @@
     border-radius: 50%;
     border: 1px solid #2e2e2e;
     position: absolute;
-    //  left :410px;
     left: 28.2vw;
     top: 207px; //80+151-24
     z-index: 10;
@@ -81,7 +77,6 @@
       display: inline-flex;
       gap: 16px;
       height: 100%;
-      // justify-content: center;
       align-items: center;
     }
   }
