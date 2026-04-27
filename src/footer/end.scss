@@ -1,12 +1,12 @@
+@use "../assets/variables" as *;
+
 .end {
   display: flex;
   padding: 22px 80px;
   justify-content: space-between;
+  @include medium2;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.011em;
-  &__partone {
+  &__links {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -18,45 +18,45 @@
   }
 }
 
-@media (max-width: 655px) {
+@media (max-width: $md) {
   .end {
     display: flex;
     flex-direction: column;
     padding: 20px 5px;
     justify-content: center;
     align-items: center;
+    @include medium2;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.011em;
     gap: 10px;
-    &__partone {
+    &__links {
       display: flex;
       flex-direction: row;
       gap: 8px;
       align-items: center;
       justify-content: center;
-      .dot {
+
+    } 
+    &__separator {
         display: flex;
         justify-content: center;
       }
-    }
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $xxxl) {
   .end {
     display: flex;
     padding: 1.5vw 5.5vw;
     font-size: 1vw;
-    &__partone {
+    &__links {
       display: flex;
       gap: 20px;
       align-items: center;
       justify-content: center;
-      .dot {
+
+    }  
+    &__separator {
         display: flex;
         justify-content: center;
       }
-    }
   }
 }

@@ -3,15 +3,16 @@ import { Context } from "./context/context";
 import { useContext, useEffect, useRef } from "react";
 import "./AppContent.scss";
 import Header from "./header/header";
-import Hero1 from "./hero1/hero1";
+// import Hero1 from "./hero1/hero1";
 import Popular from "./hero2/hero2";
 import Section3 from "./sec3/sec3";
 import NavigationBar from "./header/navigationBar";
 import Hidden from "./header/hiddenpart";
-import Season from "./hero1/heroSeason";
+// import Season from "./hero1/heroSeason";
+import Hero from "./hero1/heroprop";
 import Reviews from "./reviews/reviews";
 import Block from "./reviews/block";
-import FFooter from "./footer1/footer1";
+import Features from "./features/features";
 import Footer from "./footer/footer";
 import End from "./footer/end";
 
@@ -20,7 +21,7 @@ function AppContent() {
   const bigCont = useRef(null);
   const hidden = useRef(null);
   useEffect(() => {
-    console.log("scroll changed:", scroll);
+    // console.log("scroll changed:", scroll);
 
     if (bigCont.current && hidden.current) {
       if (scroll) {
@@ -35,24 +36,31 @@ function AppContent() {
 
   return (
     <>
-      <div className="bigCont" ref={bigCont}>
-        <div className="navBar">
+      <div className="page-wrapper" ref={bigCont}>
+        <div className="nav-bar">
           <NavigationBar></NavigationBar>
         </div>
-
         <Header />
-        <Hero1 />
+        <Hero 
+          title="New Arrivals"
+        info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur."
+        category="new"/>
         <Popular />
         <Section3 />
 
-        <Season />
+        {/* <Season /> */}
+              <Hero
+        title="‘Tis The Season"
+        info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur."
+        category="season"
+      />
 
-        <div className="hiddenNav" ref={hidden}>
+        <div className="mobile-nav" ref={hidden}>
           <Hidden />
         </div>
 
         <Reviews />
-        <FFooter />
+        <Features />
         <Footer />
         <End />
       </div>

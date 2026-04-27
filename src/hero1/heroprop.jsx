@@ -27,21 +27,21 @@ export default function Hero(props) {
 
   return (
     <>
-      <section className="toppProducts">
-        <div className="toppProducts__infos">
+      <section className="top-products">
+        <div className="top-products__info">
           <h1> {props.title}</h1>
           <p>
             {props.info}
           </p>
         </div>
-        <div className="toppProducts__goLeft"></div>
+        <div className="toppProducts__prev"></div>
 
-        <div className="toppProducts__scrollbar" ref={scrollContainer}>
-          <div className="toppProducts__scrollbar-box">
+        <div className="top-products__scrollbar" ref={scrollContainer}>
+          <div className="top-products__scrollbar-box">
             {data
               .filter((n) => n.category == props.category)
               .map((p, i) => (
-                <div className="pp__box-card" key={i}>
+                <div className="top-products__box-card" key={i}>
                   <Card
                     id={p.id}
                     title={p.name}
@@ -52,10 +52,10 @@ export default function Hero(props) {
               ))}
           </div>
         </div>
-        <div className="toppProducts__goLeft-cont" onClick={handleScrollLeft}>
+        <div className="top-products__prev-btn" onClick={handleScrollLeft}>
           <img src={left} />
         </div>
-        <div className="toppProducts__goRight" onClick={handleScrollRight}>
+        <div className="top-products__next-btn" onClick={handleScrollRight}>
           <img src={right} />
         </div>
       </section>

@@ -7,8 +7,8 @@ export default function Card (props){
         <div className="card" onClick={() => console.log(`U klikua div ${props.id}`)}>
             <div className="card__image" >
                 <img src= {props.img} />
-                <div className="heart">
-                    <div className="heartback">
+                <div className="card__wishlist">
+                    <div className="card__wishlist-bg">
                         <i className="fa-regular fa-heart"></i>
                     </div>
                 </div>
@@ -16,7 +16,7 @@ export default function Card (props){
         
         <div className="card__content">
             <p className="card__name">{props.title}</p>
-            <h3 className="card__cost">$<span className="card__nr">{props.price}</span></h3>
+            <h3 className="card__price">$<span className="card__price-amount">{props.price}</span></h3>
         </div>
     </div>
     </>

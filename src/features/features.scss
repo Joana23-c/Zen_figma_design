@@ -1,8 +1,10 @@
-.container {
+@use "../assets/variables" as *;
+
+.features {
   padding: 40px 80px;
   display: flex;
   gap: 24px;
-  &__inside {
+  &__item {
     padding: 24px 32px;
     display: flex;
     flex-direction: column;
@@ -13,27 +15,29 @@
       margin-bottom: 16px;
     }
     h1 {
-      font-weight: 500;
+      @include medium2;
       font-size: 23px;
-      line-height: 1.5;
       letter-spacing: -0.018em;
       margin-bottom: 8px;
     }
     p {
-      font-weight: 400;
+      @include regular1;
       font-size: 16px;
-      line-height: 1.5;
       letter-spacing: -0.011em;
-      color: #848484;
+      color: $footerfontcolor;
     }
   }
 }
 
-@media (max-width: 400px) {
-  .container {
+@media (max-width: $md) {
+  .features {
     padding: 30px 20px;
-    &__inside {
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+    &__item {
       padding: 6px 24px;
+      max-width : 400px;
       img {
         margin-bottom: 16px;
       }
@@ -46,14 +50,14 @@
     }
   }
 }
-@media (min-width: 1921px) {
-  .container {
+@media (min-width: $xxxl) {
+  .features {
     padding: 1vw 5vw;
     display: flex;
     gap: 1.7vw;
-    border-bottom: 0.07vw solid #e7e7e7;
+    border-bottom: 0.07vw solid $linecolor;
     height: 22vw;
-    &__inside {
+    &__item {
       padding: 1vw 2vw;
       img {
         margin-bottom: 1.1vw;
@@ -71,7 +75,7 @@
         font-size: 1.1vw;
         line-height: 1.5;
         letter-spacing: -0.011em;
-        color: #848484;
+        color: $footerfontcolor;
       }
     }
   }

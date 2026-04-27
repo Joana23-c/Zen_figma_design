@@ -1,2 +1,60 @@
-$green : #002E13;
-$font : "'Manrope', sans-serif";
+$font: "'Manrope'";
+
+//colors
+$green: #002e13;
+$linecolor : #e7e7e7;
+$footerfontcolor : #848484;
+$inputborder : #a6a6a6;
+$arrowBorder : #2e2e2e;
+$borderline : #dbdbdb;
+$reviewback : #d5d9c7;
+$lilarrow : #585858;
+$large : 1440px;
+
+//padding
+$padd : 80px;
+
+//brakeingpoints
+$sm: 375px;   
+$md: 768px;    
+$lg: 1024px;     
+$xl: 1280px; 
+$xxl: 1440px;
+$xxxl: 1536px; 
+
+
+$xxxlfont :  2.2vw;
+$lgpadding : 3%;
+$lgh1font : 24px;
+$lgpfont : 17px;
+
+@mixin medium1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: -0.021em;
+  
+}
+
+@mixin medium2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+}
+@mixin regular1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.014em;
+}
+@mixin Lregular {
+      font-weight: 400;          
+      font-size: 1.25vw;
+      margin-bottom : 4vh;
+}
+@mixin Lmedium{
+     font-weight: 500;          
+      font-size: 2.5vw; 
+      margin-bottom : 1.5vh;
+}

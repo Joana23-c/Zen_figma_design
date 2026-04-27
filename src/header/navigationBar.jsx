@@ -18,7 +18,7 @@ function NavigationBar() {
 
   return (
     <>
-      <div className="global">
+      <div className="navbar-wrapper">
         <nav className="navbar">
           <a className="navbar__title">
             <img src={Logo} />
@@ -43,11 +43,11 @@ function NavigationBar() {
 
           <ul className="navbar__util">
             <li className="navbar__util-item">
-              <div className="cart">
+              <div className="navbar__cart">
                 <img src={cart} />
-                <div className="cart-details">
-                  <span className="cart__tlt">Cart</span>(
-                  <span className="cart__nr">3</span>)
+                <div className="navbar__cart-details">
+                  <span className="navbar__cart-title">Cart</span>(
+                  <span className="navbar__cart-count">3</span>)
                 </div>
               </div>
             </li>
@@ -61,7 +61,7 @@ function NavigationBar() {
               <img src={user} />
             </li>
 
-            <button className="navbar-toggle" onClick={handleOpenNav}>
+            <button className="navbar__toggle" onClick={handleOpenNav}>
               <i className="fa-solid fa-bars"></i>
             </button>
           </ul>

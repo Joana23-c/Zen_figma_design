@@ -7,13 +7,13 @@ import x from "/X.svg";
 export default function footer() {
   return (
     <>
-      <div className="footerCont">
-        <div className="footerCont__icon">
+      <div className="footer">
+        <div className="footer__logo">
           <img src={logo}></img>
         </div>
 
-        <div className="footerCont__info">
-          <div className="col">
+        <div className="footer__columns">
+          <div className="footer__column">
             <h1>Company</h1>
             <ul>
               <li>
@@ -22,7 +22,7 @@ export default function footer() {
             </ul>
           </div>
 
-          <div className="col">
+          <div className="footer__column">
             <h1>Support</h1>
             <ul>
               <li>
@@ -39,7 +39,7 @@ export default function footer() {
               </li>
             </ul>
           </div>
-          <div className="col">
+          <div className="footer__column">
             <h1>Social</h1>
             <ul>
               <li>
@@ -62,18 +62,17 @@ export default function footer() {
               </li>
             </ul>
           </div>
-          <div className="col">
+          <div className="footer__column">
             <h1>Subscribe</h1>
-            <p className="subinfo">
+            <p className="footer__subscribe-description">
               Subscribe to receive information on exclusive offers, new product
               launch, and exciting events.
             </p>
-            <div className="inputs">
+            <div className="footer__subscribe-form">
               <input type="text" placeholder="Email Address"></input>
               <button>Submit</button>
             </div>
-            {/* <br></br> */}
-            <span className="pplink">
+            <span className="footer__privacy-note">
               By joining, you agree on the terms in our
               <a href="#"> privacy policy</a>
             </span>

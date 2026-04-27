@@ -21,15 +21,14 @@ export default function Reviews() {
       left: 340,
       behavior: "smooth",
     });
-    // console.log("go right");
   };
   return (
     <>
-      <div className="revBody">
-        <h1 className="revBody__title">What Our Customers Are Saying</h1>
+      <div className="reviews">
+        <h1 className="reviews__title">What Our Customers Are Saying</h1>
 
-        <div className="revBody__block" ref={insideblock} >
-          <div className="insideblock" >
+        <div className="reviews__grid" ref={insideblock} >
+          <div className="reviews__cards" >
             <div className="blockCont1">
               <Block
                 info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, ipsum eget ornare porttitor, ligula metus fermentum lacus, eget consequat ipsum est a nisi. Donec varius dictum eros a facilisis. Fusce at pulvinar ligula. Donec accumsan orci nisl, a sodales ante ultrices vel. Aliquam erat volutpat. Phasellus elit sem, vestibulum ut bibendum accumsan, facilisis sed mi. Suspendisse ut pellentesque risus."
@@ -79,10 +78,10 @@ export default function Reviews() {
           </div>
 
         </div>
-          <div className="goLeft" onClick={handleScrollLeft}>
+          <div className="reviews__nav-prev" onClick={handleScrollLeft}>
             <img src={left} />
           </div>
-          <div className="goRight" onClick={handleScrollRight}>
+          <div className="reviews__nav-next" onClick={handleScrollRight}>
             <img src={right} />
           </div>
       </div>

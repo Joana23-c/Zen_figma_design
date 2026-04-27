@@ -16,7 +16,7 @@ export default  function Hidden (){
  
    const { scroll, setScroll } = useContext(Context);
   let login = false;
-//   login = true;
+  login = true;
 
   const hiddenNav = useRef(null);
   const hiddenNavLoged = useRef(null);
@@ -37,58 +37,27 @@ export default  function Hidden (){
         }  
     }
   }, [scroll]);
-//   useEffect(() => {
-    
-//     if (scroll === false) {
-//         global2.current.style.display = "block";
-//             global2.current.style.display = "flex";
-//     if (hiddenNav.current) {
-//         hiddenNav.current.style.display = "flex";
-//        if(!login)
-//          notLoged.current.style.display = "block";
-//         else
-//          hiddenNavLoged.current.style.display = "block";   
-//   };
-// }
-//   }, [scroll]);
 
-//   const handleOpenNav = () => {
-//     setScroll(false);
-//     global2.current.style.display = "flex";
-//     if (hiddenNav.current) {
-//         hiddenNav.current.style.display = "flex";
-//        if(!login)
-//          notLoged.current.style.display = "block";
-//         else
-//          hiddenNavLoged.current.style.display = "block";   
-//   };
-// }
 
   const XhiddenNavBtn = () => {
     
     setScroll(true);
-    // console.log(scroll);
-    // global2.current.style.display = "none";
-    // setScroll(true);
-    // hiddenNav.current.style.display = "none";
-    // hiddenNavLoged.current.style.display = "none";
-    // notLoged.current.style.display = "none";
   };
 
     return (
         <>
-        <div className="global2" ref={global2}>
-                <section className="hiddenNav" ref={hiddenNav}>
-                  <div className="hiddenNav__list">
+        <div className="mobile-nav__overlay" ref={global2}>
+                <section className="mobile-nav" ref={hiddenNav}>
+                  <div className="mobile-nav__list">
                     <ul>
-                      <li className="xli">
-                        <button id="xbtn" className="xbtn" onClick={XhiddenNavBtn}>
+                      <li className="mobile-nav__close-item">
+                        <button id="xbtn" className="mobile-nav__close" onClick={XhiddenNavBtn}>
                           <i className="fa-solid fa-x" width={22} height={22}></i>
                         </button>
                       </li>
                       {/* <li><button id="xbtn" className="xbtn" > <i className="fa-solid fa-x"></i></button></li> */}
                       <li>
-                        <div className="home">
+                        <div className="mobile-nav__home">
                           <div className="hImg">
                             <img src={home} width={22} height={22} />
                           </div>
@@ -112,7 +81,7 @@ export default  function Hidden (){
                       </li>
                       <hr />
                       <li>
-                        <div className="search">
+                        <div className="mobile-nav__search">
                           <div className="sImg">
                             {" "}
                             <SearchIcon className="searchimg" width={24} height={24} />
@@ -121,7 +90,7 @@ export default  function Hidden (){
                         </div>
                       </li>
                       <li>
-                        <div className="hCart">
+                        <div className="mobile-nav__cart">
                           <CartIcon className="cartimg" width={22} height={22} />
                           <span className="cart-details">
                             <span className="cart__tlt">
@@ -134,22 +103,22 @@ export default  function Hidden (){
                     </ul>
         
         
-                    <section className="notLoged" ref={notLoged}>
+                    <section className="mobile-nav__guest-panel" ref={notLoged}>
                     <p>Create an account or log in to start shopping at Zen</p>
-                    <div className="btns">
-                      <a href="#" className="btns__Reg">
+                    <div className="mobile-nav__auth-actions">
+                      <a href="#" className="registerBtn">
                         Create an account
                       </a>
                       <br />
-                      <a href="#" className="btns__Log">
+                      <a href="#" className="loginBtn">
                         Log In
                       </a>
                     </div>
                   </section>
         
                   
-                <section className="hiddenNavLoged" ref={hiddenNavLoged}>
-                  <div className="hiddenNavLoged__list">
+                <section className="mobile-nav--user-panel" ref={hiddenNavLoged}>
+                  <div className="mobile-nav--user-panel__list">
                     <ul>
                       <li>
                         <a href="#">
@@ -188,3 +157,4 @@ export default  function Hidden (){
         </>
     )
 }
+

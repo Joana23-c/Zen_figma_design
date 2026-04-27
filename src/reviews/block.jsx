@@ -10,19 +10,19 @@ export default function Block(props) {
 
   return (
     <>
-      <div className="block1">
-        <div className="block1__info">
+      <div className="review-card">
+        <div className="review-card__body">
           {props.img && <img src={props.img} />}
           <p>{props.info}</p>
         </div>
-        <div className="block1__auth">
-          <div className="block1__auth-name">
-            <div className="vector">
+        <div className="review-card__author">
+          <div className="review-card__author-name">
+            <div className="review-card__author-avatar">
               <img src={vector}></img>
             </div>
             <p>{props.auth}</p>
           </div>
-          <div className="block1__auth-stars">
+          <div className="review-card__stars">
             {stars.map((img, i) => (
               <img key={i} src={img} alt="star" />
             ))}

@@ -1,13 +1,13 @@
-import "./footer1.scss";
+import "./features.scss";
 import delivery from "/delivery.png";
 import lock from "/lock.png";
 import returns from "/consumable.png";
 
-export default function footer1() {
+export default function features() {
   return (
     <>
-      <div className="container">
-        <div className="container__inside">
+      <div className="features">
+        <div className="features__item">
           <img src={delivery}></img>
           <h1>Free Shipping*</h1>
           <p>
@@ -15,7 +15,7 @@ export default function footer1() {
             consectetur, ipsum eget ornare porttitor,
           </p>
         </div>
-        <div className="container__inside">
+        <div className="features__item">
           <img src={lock}></img>
           <h1>Secure Payment</h1>
           <p>
@@ -23,7 +23,7 @@ export default function footer1() {
             consectetur, ipsum eget ornare porttitor,
           </p>
         </div>
-        <div className="container__inside">
+        <div className="features__item">
           <img src={returns}></img>
           <h1>Easy Returns and Exchanges</h1>
           <p>

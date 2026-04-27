@@ -7,15 +7,15 @@ export default function Popular(){
     return (
         <>   
     {/* <div className="totalContainer"> */}
-        <section className="pp">
+        <section className="popular-products">
         
-            <h1 className="pp__title">Popular Products</h1>
-            <div className="pp__box">
+            <h1 className="popular-products__title">Popular Products</h1>
+            <div className="popular-products__grid">
                  {
                    data
                    .filter((n)=> n.category=="popular")
                    .map((p, i) => (
-                    <div className="pp__box-card" key={i}>
+                    <div className="popular-products__card-wrapper" key={i}>
                      <Card  
                      id={p.id}  
                      title ={p.name} 

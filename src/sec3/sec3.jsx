@@ -5,12 +5,12 @@ import "./sec3.scss";
 export default function Section (){
     return (
         <>
-        <section className="container">
-            <div className="container__image" >
+        <section className="about-section">
+            <div className="about-section__image" >
                 <img src={Img}></img>
             </div>
-            <div className="container__info">
-                <div className="container__info-center">
+            <div className="about-section__info">
+                <div className="about-section__info-center">
                 <h1>
                     We Believe in Everything Natural
                 </h1>
