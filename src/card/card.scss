@@ -10,19 +10,7 @@
   font-family: $font;
   &__content {
     max-width: 302px;
-    p {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 1.5;
-      letter-spacing: -0.02em;
-    }
-    h3 {
-      margin-top: 8px;
-      font-weight: 500;
-      font-size: 23px;
-      line-height: 1.5;
-      letter-spacing: -0.018em;
-    }
+
   }
   img {
     width: 302px;
@@ -32,21 +20,33 @@
   &__wishlist {
     display: none;
   }
+   &__name {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+    }
+    &__price{
+      margin-top: 8px;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 1.5;
+      letter-spacing: -0.018em;
+    }
 }
 
 @media (max-width: $lg) {
   .card {
     height: 100%;
     width: 180px;
-    &__content {
-      p {
+    &__name{
         font-size: 16px;
       }
-      h3 {
+    &__price {
         margin-top: 5px;
         font-size: 16px;
       }
-    }
+    
     img {
       width: 100%;
       height: 180px;
@@ -59,8 +59,8 @@
       display: flex;
       justify-content: flex-end;
       width: 100%;
-
-      &-bg {
+    }
+    &__wishlist-bg {
         display: flex;
         background: rgba(255, 255, 255, 0.718);
         width: 24px;
@@ -69,7 +69,6 @@
         justify-content: center;
         align-items: center;
       }
-    }
   }
 }
 
@@ -79,7 +78,6 @@
     width: 18vw;
     height: 25vw;
     border-radius: 8px;
-    // box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
     overflow: hidden;
     font-family: $font;
     &__image {
@@ -90,21 +88,21 @@
     }
     &__content {
       max-width: 90%;
-      p {
+
+    }
+    &__name {
         font-weight: 500;
         font-size: 1.1vw;
         line-height: 1.5;
         letter-spacing: -0.02em;
       }
-      h3 {
+     &__price {
         margin-top: 8px;
         font-weight: 500;
         font-size: 1.2vw;
         line-height: 1.5;
         letter-spacing: -0.018em;
       }
-    }
-
     &__wishlist {
       display: none;
     }

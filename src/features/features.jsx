@@ -3,7 +3,7 @@ import delivery from "/delivery.png";
 import lock from "/lock.png";
 import returns from "/consumable.png";
 
-export default function features() {
+export default function Features() {
   return (
     <>
       <div className="features">

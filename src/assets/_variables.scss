@@ -1,4 +1,4 @@
-$font: "'Manrope'";
+$font: "Manrope";
 
 //colors
 $green: #002e13;
@@ -49,12 +49,12 @@ $lgpfont : 17px;
   letter-spacing: -0.014em;
 }
 @mixin Lregular {
-      font-weight: 400;          
-      font-size: 1.25vw;
-      margin-bottom : 4vh;
+      font-weight: 300;          
+      font-size: 1.2vw;
+      // margin-bottom : 4vh;
 }
 @mixin Lmedium{
      font-weight: 500;          
-      font-size: 2.5vw; 
-      margin-bottom : 1.5vh;
+      font-size: 2vw; 
+      // margin-bottom : 1.5vh;
 }

@@ -11,10 +11,10 @@
     gap: 8px;
     align-items: center;
     justify-content: center;
-    .dot {
-      display: flex;
-      justify-content: center;
-    }
+  }
+  &__separator {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -34,12 +34,11 @@
       gap: 8px;
       align-items: center;
       justify-content: center;
-
-    } 
+    }
     &__separator {
-        display: flex;
-        justify-content: center;
-      }
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 @media (min-width: $xxxl) {
@@ -52,11 +51,10 @@
       gap: 20px;
       align-items: center;
       justify-content: center;
-
-    }  
+    }
     &__separator {
-        display: flex;
-        justify-content: center;
-      }
+      display: flex;
+      justify-content: center;
+    }
   }
 }

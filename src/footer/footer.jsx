@@ -4,7 +4,7 @@ import insta from "/Instagram.svg";
 import facebook from "/Vector.svg";
 import x from "/X.svg";
 
-export default function footer() {
+export default function Footer() {
   return (
     <>
       <div className="footer">

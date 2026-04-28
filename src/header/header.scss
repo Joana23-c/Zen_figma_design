@@ -101,20 +101,22 @@
       margin-top: 80px;
       h1 {
         @include Lmedium;
+        margin-bottom : 2%;
       }
       p {
         @include Lregular;
+        margin-bottom : 3%
       }
     }
 
     &__button {
       margin-top: 0px;
       width: 20%;
-      height: 4vw;
+      height: 3.5vw;
 
       &-inside {
         @include medium2;
-        font-size: 1.1vw;
+        font-size: 1vw;
       }
     }
   }
