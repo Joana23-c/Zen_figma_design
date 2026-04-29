@@ -113,7 +113,7 @@
 @media (min-width: $xxxl) {
   .review-card {
     background-color: white;
-    max-width: 25vw;
+    max-width: 480px;
     height: auto;
     border-radius: 8px;
     &__body {
@@ -122,12 +122,12 @@
       grid-template-columns: auto auto;
       gap: 16px;
       img {
-        width: 7.5vw;
-        height: 7.5vw;
+        width: 140px;
+        height: 140px;
       }
       p {
         font-weight: 400;
-        font-size: 1.1vw;
+        font-size: 21px;
         line-height: 1.5;
         letter-spacing: -0.011em;
       }
@@ -144,7 +144,7 @@
         p {
           margin-left: 4px;
           font-weight: 500;
-          font-size: 1vw;
+          font-size: 21px;
           line-height: 1.5;
           letter-spacing: -0.025em;
         }

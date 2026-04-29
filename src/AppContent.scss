@@ -1,12 +1,5 @@
 @use "./assets/variables" as *;
 @use "./assets/reset" as *;
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-//   font-family: $font;
-// }
-
 .page-wrapper {
   width: 100vw;
   height: 100vh;
@@ -47,6 +40,7 @@
 
 @media (min-width: $xxxl) {
   .page-wrapper {
+    background: #d5d9c7;
     width: 100vw;
     height: 100vh;
     position: relative;

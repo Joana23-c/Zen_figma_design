@@ -113,28 +113,30 @@
 
 @media (min-width: $xxxl) {
   .navbar-wrapper {
-    // width: 100vw;
+    background-color: rgba(28, 30, 28, 0.051);
+    backdrop-filter: blur(10px);
     width: 100%;
     .navbar {
       display: flex;
-      justify-content: space-between;
-      // height: 8vh;
-      height: 4.4vw;
-      font-size: 1.3vw;
-      padding-left: 5.6vw;
+      max-width : 1920px;
+      margin : auto;
+       height: 80px;
+      font-size: 23px;
+          background-color: transparent;
+    backdrop-filter: none;
       &__title {
         display: flex;
         align-items: center;
         overflow : hidden;
         img {
-          width: 6.3vw;
-          height: 3.8vh;
+          height: 40px;
         }
       }
 
       &__tabs {
         display: flex;
-        gap: 1vw;
+        // gap: 1vw;
+        gap: 19px;
         align-items: center;
       }
 
@@ -143,11 +145,11 @@
         align-items: center;
         height: 100%;
         overflow: hidden;
-        gap: 1vw;
+        gap: 10px;
         &-item {
           img {
-            width: 1.7vw;
-            height: 1.7vw;
+            width: 32px;
+            // height: 17%;
           }
         }
       }

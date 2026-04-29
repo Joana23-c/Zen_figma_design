@@ -48,13 +48,14 @@ $lgpfont : 17px;
   line-height: 1.5;
   letter-spacing: -0.014em;
 }
-@mixin Lregular {
-      font-weight: 300;          
-      font-size: 1.2vw;
-      // margin-bottom : 4vh;
-}
-@mixin Lmedium{
-     font-weight: 500;          
-      font-size: 2vw; 
-      // margin-bottom : 1.5vh;
-}
+// @mixin Lregular {
+//       font-weight: 300;          
+//       font-size: 1.2vw;
+//       // margin-bottom : 4vh;
+// }
+// @mixin Lmedium{
+//      font-weight: 500;          
+//       font-size: 2vw; 
+//       // margin-bottom : 1.5vh;
+// }
+$xxxlpadding : 50px;

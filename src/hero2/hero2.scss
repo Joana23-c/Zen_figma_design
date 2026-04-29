@@ -6,6 +6,7 @@
   width: 100%;
   padding: 80px;
   box-sizing: border-box;
+  background:white;
 
   &__title {
     @include medium1;
@@ -109,12 +110,15 @@
 
 @media (min-width: $xxxl) {
   .popular-products {
-    width: 100%;
-    padding: 3%;
+    // width: 100%;
+    padding: 50px;
+    max-width : 1920px;
+    margin-left : auto;
+    margin-right : auto;
 
     &__title {
-      font-size: 2.2vw;
-      margin-bottom: 2.2%;
+      font-size: 42px;
+      margin-bottom: 42px;
     }
      &__grid {
        grid-template-columns: repeat(4, auto);

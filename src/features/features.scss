@@ -4,6 +4,7 @@
   padding: 40px 80px;
   display: flex;
   gap: 24px;
+  background : white;
   &__item {
     padding: 24px 32px;
     display: flex;
@@ -52,27 +53,30 @@
 }
 @media (min-width: $xxxl) {
   .features {
-    padding: 1vw 5vw;
+    max-width :1920px;
+    margin-left : auto;
+    margin-right : auto;
+    padding: 19px 96px;
     display: flex;
-    gap: 1.7vw;
-    border-bottom: 0.07vw solid $linecolor;
-    height: 22vw;
+    gap: 33px;
+    border-bottom: 1.3px solid $linecolor;
+    height: 380px;
     &__item {
-      padding: 1vw 2vw;
+      padding: 19px 38px;
       img {
-        margin-bottom: 1.1vw;
-        width: 4.4vw;
+        margin-bottom: 20px;
+        width: 80px;
       }
       h1 {
         font-weight: 500;
-        font-size: 1.6vw;
+        font-size: 28px;
         line-height: 1.5;
         letter-spacing: -0.018em;
         margin-bottom: 8px;
       }
       p {
         font-weight: 400;
-        font-size: 1.1vw;
+        font-size: 18px;
         line-height: 1.5;
         letter-spacing: -0.011em;
         color: $footerfontcolor;

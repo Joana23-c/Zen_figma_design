@@ -75,15 +75,15 @@
 @media (min-width: $xxxl) {
   .card {
     background: #ffffff;
-    width: 18vw;
-    height: 25vw;
+    width: 345px;
+    height: 480px;
     border-radius: 8px;
     overflow: hidden;
     font-family: $font;
     &__image {
       img {
-        width: 18vw;
-        height: 18vw;
+        width: 345px;
+        height: 345px;
       }
     }
     &__content {
@@ -92,14 +92,14 @@
     }
     &__name {
         font-weight: 500;
-        font-size: 1.1vw;
+        font-size: 21px;
         line-height: 1.5;
         letter-spacing: -0.02em;
       }
      &__price {
         margin-top: 8px;
         font-weight: 500;
-        font-size: 1.2vw;
+        font-size: 23px;
         line-height: 1.5;
         letter-spacing: -0.018em;
       }
