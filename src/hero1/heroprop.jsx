@@ -14,7 +14,6 @@ export default function Hero(props) {
       left: -200,
       behavior: "smooth",
     });
-    // console.log("go left");
   };
 
   const handleScrollRight = () => {
@@ -22,11 +21,9 @@ export default function Hero(props) {
       left: 200,
       behavior: "smooth",
     });
-    // console.log("go right");
   };
 
   return (
-    <>
       <section className="top-products">
         <div className="top-products__info">
           <h1> {props.title}</h1>
@@ -59,6 +56,5 @@ export default function Hero(props) {
           <img src={right} />
         </div>
       </section>
-    </>
   );
 }

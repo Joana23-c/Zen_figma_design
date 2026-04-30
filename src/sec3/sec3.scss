@@ -1,7 +1,7 @@
 @use "../assets/variables" as *;
 
 .about-section {
-  background : white;
+  background: white;
   width: 100vw;
   padding: 80px;
 
@@ -51,81 +51,56 @@
   }
 }
 
-// @media (min-width: 1500px) and (max-width: 1920px) {
-//   .about-section {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 3%;
-//     &__image {
-//       display: flex;
-//       width: 100%;
-//       justify-content: flex-end;
-//     }
-//     &__info {
-//       display: flex;
-//       justify-content: flex-start;
-//       align-items: center;
-//       width: 100%;
-//       h1 {
-//         font-size: 1.8vw;
-//       }
-//       p {
-//         font-size: 1.2vw;
-//       }
-//       button {
-//         font-size: 1.2vw;
-//         height: 70px;
-//         width: 150px;
-//       }
-//     }
-//   }
-// }
 @media (max-width: $xl) {
   .about-section {
-    padding : 0 3%;
-     h1 {
-        @include medium2;
-        font-size: 22px;
-        margin-bottom: 16px;
-      }
-      p {
-        @include regular1;
-        font-size :16px;
-        margin-bottom: 24px;
-      }
-      button{
-       @include regular1;
-           font-size: 16px;
-      }
+    padding: 0 80px;
+    h1 {
+      @include medium2;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    p {
+      @include regular1;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    button {
+      @include regular1;
+      font-size: 16px;
+    }
   }
-
+}
+@media (max-width: $lg) {
+  .about-section {
+    padding: 3%;
+  }
 }
 //768px
 @media (max-width: $md) {
   .about-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    width: 100vw;
     padding: $lgpadding;
     margin-bottom: 25px;
     &__image {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+      background: url(/images/Img.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      max-width: 768px;
+      height: 300px;
 
       img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
+        display: none;
       }
     }
     &__info {
       margin-top: -20px;
       display: flex;
-      justify-content: center;
-      max-width: 760px;
+      justify-content: flex-start;
+      max-width: 100%;
       &-center {
         min-height: 100%;
         h1 {
@@ -140,7 +115,59 @@
         }
         button {
           border: none;
-          // padding: 12px;
+          color: white;
+          background-color: $green;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.5;
+          letter-spacing: -0.011em;
+          border-radius: 4px;
+          height: 40px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    padding: $lgpadding;
+    margin-bottom: 25px;
+    &__image {
+      display: flex;
+      justify-content: flex-start;
+      background: none;
+      max-width: 768px;
+      height: 300px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: flex;
+      }
+    }
+    &__info {
+      margin-top: -60px;
+      display: flex;
+      justify-content: flex-start;
+      max-width: 100%;
+      &-center {
+        min-height: 100%;
+        h1 {
+          font-size: 22px;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 1.5;
+          letter-spacing: -0.014em;
+          margin-bottom: 15px;
+        }
+        button {
+          border: none;
           color: white;
           background-color: $green;
           font-weight: 400;
@@ -158,16 +185,16 @@
 
 @media (min-width: $xxxl) {
   .about-section {
-    max-width : 1920px;
-
-    margin-left : auto;
-    margin-right : auto;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -2px;
     display: flex;
-    justify-content : center;
+    justify-content: center;
     padding: 50px;
     gap: 48px;
-    // height : 40%; 
-    height : 700px;
+    height: 700px;
+
     &__image {
       display: flex;
       justify-content: flex-end;
@@ -178,30 +205,28 @@
         object-fit: contain;
       }
     }
-   &__info { 
-     &-center {
-      max-width: 100%;
-      h1 {
-        font-size: 42px;
-      }
-      p {
-        font-size: 24px;
-      }
-      button {
-        border: none;
-        // padding: 12px;
-        color: white;
-        background-color: $green;
-        font-weight: 500;
-        font-size: 21px;
-        line-height: 1.5;
-        letter-spacing: -0.011em;
-        border-radius: 4px;
-        height: 57px;
-        width: 142px;;
+    &__info {
+      &-center {
+        max-width: 100%;
+        h1 {
+          font-size: 42px;
+        }
+        p {
+          font-size: 24px;
+        }
+        button {
+          border: none;
+          color: white;
+          background-color: $green;
+          font-weight: 500;
+          font-size: 21px;
+          line-height: 1.5;
+          letter-spacing: -0.011em;
+          border-radius: 4px;
+          height: 57px;
+          width: 142px;
+        }
       }
     }
-  }
-  
   }
 }

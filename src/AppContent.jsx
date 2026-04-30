@@ -35,7 +35,7 @@ function AppContent() {
   }, [scroll]);
 
   return (
-    <>
+    
       <div className="page-wrapper" ref={bigCont}>
         <div className="nav-bar">
           <NavigationBar></NavigationBar>
@@ -64,7 +64,7 @@ function AppContent() {
         <Footer />
         <End />
       </div>
-    </>
+    
   );
 }
 

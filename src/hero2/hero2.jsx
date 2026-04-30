@@ -5,8 +5,6 @@ import "./hero2.scss";
 
 export default function Popular(){
     return (
-        <>   
-    {/* <div className="totalContainer"> */}
         <section className="popular-products">
         
             <h1 className="popular-products__title">Popular Products</h1>
@@ -26,8 +24,6 @@ export default function Popular(){
                 }
          </div>
         </section>
-        {/* </div> */}
-        </>
         
     );
 }

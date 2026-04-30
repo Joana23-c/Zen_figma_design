@@ -1,25 +1,20 @@
 @use "../assets/variables" as *;
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  ul {
-    list-style: none;
-  }
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
 .navbar-wrapper {
-  width: 100vw;
-
   .navbar {
     display: flex;
     height: 64px;
     justify-content: space-between;
-    background-color: rgba(28, 30, 28, 0.051);
+    background-color: rgba(28, 30, 28, 0.25);
     backdrop-filter: blur(10px);
     @include medium2;
     font-weight: 300;
-    // font-size: 16px;
-    // line-height: 1.5;
-    // letter-spacing: -0.011em;
     color: white;
     padding-left: 80px;
 
@@ -64,9 +59,6 @@
 
 @media (max-width: $lg) {
   .navbar-wrapper {
-    width: 100%;
-    // overflow-y:hidden;
-
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -113,21 +105,16 @@
 
 @media (min-width: $xxxl) {
   .navbar-wrapper {
-    background-color: rgba(28, 30, 28, 0.051);
-    backdrop-filter: blur(10px);
-    width: 100%;
     .navbar {
       display: flex;
-      max-width : 1920px;
-      margin : auto;
-       height: 80px;
+      max-width: 1920px;
+      margin: 0 auto;
+      height: 80px;
       font-size: 23px;
-          background-color: transparent;
-    backdrop-filter: none;
       &__title {
         display: flex;
         align-items: center;
-        overflow : hidden;
+        overflow: hidden;
         img {
           height: 40px;
         }
@@ -135,7 +122,6 @@
 
       &__tabs {
         display: flex;
-        // gap: 1vw;
         gap: 19px;
         align-items: center;
       }
@@ -149,7 +135,6 @@
         &-item {
           img {
             width: 32px;
-            // height: 17%;
           }
         }
       }

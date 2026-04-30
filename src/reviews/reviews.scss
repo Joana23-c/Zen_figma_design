@@ -10,16 +10,16 @@
     font-size: 32px;
     margin-bottom: 24px;
   }
-   &__cards {
-      column-count: 3;
-      column-gap: 10px;
-      break-inside: avoid;
-      .blockCont1,
-      .blockCont3,
-      .blockCont5 {
-        margin-bottom: 24px;
-      }
+  &__cards {
+    column-count: 3;
+    column-gap: 10px;
+    break-inside: avoid;
+    .blockCont1,
+    .blockCont3,
+    .blockCont5 {
+      margin-bottom: 24px;
     }
+  }
   &__nav-next {
     display: none;
   }
@@ -30,12 +30,14 @@
 
 @media (max-width: $xl) {
   .reviews {
-    padding: 3%;
+    padding: 0px 80px;
     width: 100vw;
     height: 620px;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &__title {
-      // font-weight: 500;
       font-size: 22px;
       margin-bottom: 24px;
     }
@@ -43,72 +45,76 @@
       overflow-x: scroll;
       overflow-y: hidden;
       scrollbar-width: none;
-        &::-webkit-scrollbar {
-          display: none;
-        }
-
-    }  
-        &__cards {
-        width: 2020px;
-        height: 500px;
-        display: inline-flex;
-        gap: 23px;
-        .blockCont1,
-        .blockCont3,
-        .blockCont5 {
-          break-inside: avoid;
-          margin-bottom: 2px;
-        }
+      &::-webkit-scrollbar {
+        display: none;
       }
-
+    }
+    &__cards {
+      width: 2020px;
+      height: 500px;
+      display: inline-flex;
+      gap: 23px;
+      .blockCont1,
+      .blockCont3,
+      .blockCont5 {
+        break-inside: avoid;
+        margin-bottom: 2px;
+      }
+    }
   }
 }
-  @media (max-width: $sm) {
-    .reviews {
-      padding-left: 5%;
-      padding-top: 5%;
-      height : 580px;
-      width : 100%;
-    
-      &__nav-next {
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        border: 1px solid $lilarrow;
-        left: 87%;
-        top: 45%;
-        z-index: 10;
-        img {
-          transform: scale(0.8);
-        }
+@media (max-width: $lg) {
+  .reviews {
+    padding: 3%;
+  }
+}
+@media (max-width: $sm) {
+  .reviews {
+    padding-left: 5%;
+    padding-top: 5%;
+    height: 580px;
+    width: 100%;
+
+    &__nav-next {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 1px solid $lilarrow;
+      left: 87%;
+      top: 45%;
+      z-index: 10;
+      img {
+        transform: scale(0.8);
       }
-      &__nav-prev {
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        border: 1px solid $lilarrow;
-        left: 1.5%;
-        top: 45%;
-        z-index: 10;
-        img {
-          transform: scale(0.8);
-        }
-      }}
     }
+    &__nav-prev {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 1px solid $lilarrow;
+      left: 1.5%;
+      top: 45%;
+      z-index: 10;
+      img {
+        transform: scale(0.8);
+      }
+    }
+  }
+}
 @media (min-width: $xxxl) {
   .reviews {
-    max-width : 1920px;
-    max-height : 1380px;
-    margin-left : auto;
-    margin-right : auto;
+    max-width: 1920px;
+    max-height: 1380px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $reviewback;
     padding: 50px;
     display: flex;
@@ -119,15 +125,14 @@
       font-size: 42px;
       margin-bottom: 38px;
     }
-     &__cards {
-        column-count: 3;
-        gap: 38px;
-        .blockCont1,
-        .blockCont3,
-        .blockCont5 {
-          margin-bottom: 38px;
-        }
+    &__cards {
+      column-count: 3;
+      gap: 38px;
+      .blockCont1,
+      .blockCont3,
+      .blockCont5 {
+        margin-bottom: 38px;
       }
+    }
   }
 }
-
